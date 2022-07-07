@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import styled from 'styled-components';
 import ReactDOM from 'react-dom';
 
-const Modal = ({ show, maskClosable, onClose, children, title, data }) => {
+const ModalTest = ({ show, maskClosable, onClose, children, title, data }) => {
     const [isBrowser, setIsBrowser] = useState(false);
 
     const onMaskClick = (e) => {
@@ -12,9 +12,6 @@ const Modal = ({ show, maskClosable, onClose, children, title, data }) => {
         }
     }
 
-    useEffect(() => {
-        setIsBrowser(true);
-    }, []);
 
     // const handleCloseClick = (e) => {
     //     e.preventDefault();

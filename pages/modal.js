@@ -1,17 +1,18 @@
-import Modal from "../components/organism/Modal/Modal";
+import ModalTest from "../components/organism/Modal/ModalTest";
 import { useState } from 'react';
-export default function modal() {
+export default function Modal() {
 
     const [showModal, setShowModal] = useState(true);
 
     return (
-        <Modal
+        <ModalTest
             onClose={() => setShowModal(true)}
             show={showModal}
             title={"title"}
             maskClosable={true}
             data={"test"}
         >
-        </Modal>
+            몰라
+        </ModalTest>
     );
 }
