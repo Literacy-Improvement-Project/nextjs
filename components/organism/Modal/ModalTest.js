@@ -89,4 +89,4 @@ const StyledModalTitle = styled.div`
   `;
 
 
-export default Modal;
+export default ModalTest;
