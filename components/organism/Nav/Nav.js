@@ -23,12 +23,12 @@ export default function Nav() {
             <nav className={styles.nav}>
                 <ul className={styles.ul}>
 
-                    <li className={styles.test}><a className={styles.a} href="/"><img className={styles.img} src="./images/picture01.png" /></a></li>
+                    <li className={styles.test}><Link href="/"><a className={styles.a}><img className={styles.img} src="./images/picture01.png" /></a></Link></li>
                     {router.pathname === '/' ?
                         <>
-                            <li className={styles.li}><a className={styles.a} href={index.dailyWords}><img className={styles.img2} src="./images/daily_word.png" /></a></li>
-                            <li className={styles.li}><a className={styles.a} href={index.searchWords}><img className={styles.img2} src="./images/search_word02.png" /></a></li>
-                            <li className={styles.li}><a className={styles.a} href={index.openDictionary}><img className={styles.img2} src="./images/openDictionary.png" /></a></li>
+                            <li className={styles.li}><Link href={index.dailyWords}><a className={styles.a} ><img className={styles.img2} src="./images/daily_word.png" /></a></Link></li>
+                            <li className={styles.li}><Link href={index.searchWords} ><a className={styles.a} href={index.searchWords}><img className={styles.img2} src="./images/search_word02.png" /></a></Link></li>
+                            <li className={styles.li}><Link href={index.openDictionary}><a className={styles.a} ><img className={styles.img2} src="./images/openDictionary.png" /></a></Link></li>
                         </> :
                         <>
                             <li className={styles.li}><Link href="/"><a className={styles.a} href={index.dailyWords}><img className={styles.img2} src="./images/daily_word.png" /></a></Link></li>

@@ -8,14 +8,14 @@ export default function Footer(props) {
         {/* 출처표시 */}
         <dt className={styles.dt}>자료제공</dt>
         <dd className={styles.dd}>
-          <a href="https://stdict.korean.go.kr/main/main.do" className={styles.dicname} target="_blank">표준국어대사전</a>
+          <a href="https://stdict.korean.go.kr/main/main.do" className={styles.dicname}>표준국어대사전</a>
           <span className={styles.dicinfo}>
             <span className={styles.organization}>국립국어원</span>
           </span>
         </dd>
 
         <dd className={styles.dd}>
-          <a href="https://opendict.korean.go.kr/main" className={styles.dicname} target="_blank">우리말샘</a>
+          <a href="https://opendict.korean.go.kr/main" className={styles.dicname}>우리말샘</a>
           <span className={styles.dicinfo}>
             <span className={styles.organization}>국립국어원</span>
           </span>
@@ -29,7 +29,7 @@ export default function Footer(props) {
         <div className={styles.policy}>
           본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.<p></p>
           <div className={styles.copyright}>
-            <a target="_blank" className={styles.logo}>
+            <a className={styles.logo}>
               <img className={styles.logo} src="./images/slowStarter_logo.png"></img>
             </a>
             <em>Copyright ©</em>
