@@ -5,14 +5,17 @@ export default function Modal() {
     const [showModal, setShowModal] = useState(true);
 
     return (
-        <ModalTest
-            onClose={() => setShowModal(true)}
-            show={showModal}
-            title={"title"}
-            maskClosable={true}
-            data={"test"}
-        >
-            몰라
-        </ModalTest>
+        <div>
+            <h1>되는건가?</h1>
+            <ModalTest
+                onClose={() => setShowModal(false)}
+                show={showModal}
+                title={"title"}
+                maskClosable={true}
+                data={"test"}
+            >
+                몰라
+            </ModalTest>
+        </div>
     );
 }

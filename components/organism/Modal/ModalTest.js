@@ -11,7 +11,9 @@ const ModalTest = ({ show, maskClosable, onClose, children, title, data }) => {
             onClose()
         }
     }
-
+    useEffect(() => {
+        setIsBrowser(true);
+    }, []);
 
     // const handleCloseClick = (e) => {
     //     e.preventDefault();
