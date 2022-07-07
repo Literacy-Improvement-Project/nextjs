@@ -29,8 +29,8 @@ const Modal = ({ show, maskClosable, onClose, children, title, data }) => {
                         x
                     </a>
                 </StyledModalHeader>
-                {title && <StyledModalTitle>오픈사전에 등록하기</StyledModalTitle>}
-                <StyledModalBody>{children}
+                {title && <StyledModalTitle>{title}</StyledModalTitle>}
+                <StyledModalBody>{children}{data}
 
                 </StyledModalBody>
             </StyledModal>
