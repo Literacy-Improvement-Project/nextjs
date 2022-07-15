@@ -1,5 +1,6 @@
 //for header banner
 import styles from './Footer.module.css';
+import Image from 'next/image';
 
 export default function Footer(props) {
   return (
@@ -30,7 +31,7 @@ export default function Footer(props) {
           본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.<p></p>
           <div className={styles.copyright}>
             <a className={styles.logo}>
-              <img className={styles.logo} src="./images/slowStarter_logo.png"></img>
+              <Image className={styles.logo} alt="slowStarter logo" src="/images/slowStarter_logo.png" width={100} height={40}></Image>
             </a>
             <em>Copyright ©</em>
             <a target="_blank">slowStarter.</a>

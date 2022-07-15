@@ -3,7 +3,7 @@ import { HYDRATE } from "next-redux-wrapper";
 
 // import counter from './counterSlice';
 // import quizSlice from "./quizSlice";
-// import authSlice from "./authSlice";
+import authSlice from "./authSlice";
 // import myOpenDictSlice from "./myOpenDictSlice";
 
 const rootReducer = (state, action) => {
@@ -16,7 +16,7 @@ const rootReducer = (state, action) => {
     return combineReducers({
         // counter,
         // quizSlice,
-        // authSlice,
+        authSlice,
         // myOpenDictSlice,
         // 여기에 추가 
     })(state, action);
