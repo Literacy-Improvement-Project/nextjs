@@ -2,7 +2,6 @@
 import styles from './Footer.module.css';
 import Image from 'next/image';
 
-
 export default function Footer(props) {
   return (
     <div className={styles.container}>
