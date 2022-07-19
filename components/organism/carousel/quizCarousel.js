@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./QuizCarousel.module.css";
 import PrevNextButton from "../../molecule/buttons/prevnextButton";
 import PrevButton from "../../molecule/buttons/prevButton";
-import QuizItem from "../../molecule/quizItem/quizitem";
+import QuizItem from "../../molecule/quizItem/QuizItem";
 import Button from "../../atom/Button/Button";
 import { useSelector } from 'react-redux';
 import { useMutation } from "react-query";
