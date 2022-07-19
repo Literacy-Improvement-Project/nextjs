@@ -59,7 +59,6 @@
     background: linear-gradient(0deg, rgba(0, 3, 255, 1) 0%, rgba(2, 126, 251, 1) 100%);
 }
 
-
 /* 2 */
 
 .btn2 {
@@ -77,11 +76,11 @@
     box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5), -4px -4px 6px 0 rgba(116, 125, 136, .5), inset -4px -4px 6px 0 rgba(255, 255, 255, .2), inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
 }
 
-
 /* 3 */
 
 .btn3 {
     background: #0053B5;
+    /* background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%); */
     width: 130px;
     height: 40px;
     line-height: 42px;
@@ -161,7 +160,6 @@
     width: 100%;
 }
 
-
 /* 4 */
 
 .btn4 {
@@ -240,7 +238,6 @@
     width: 100%;
 }
 
-
 /* 5 */
 
 .btn5 {
@@ -284,7 +281,6 @@
     width: 100%;
     transition: 800ms ease all;
 }
-
 
 /* 6 */
 
@@ -371,7 +367,6 @@
     width: 100%;
 }
 
-
 /* 7 */
 
 .btn7 {
@@ -451,7 +446,6 @@
     width: 100%;
 }
 
-
 /* 8 */
 
 .btn8 {
@@ -476,6 +470,10 @@
     right: 0;
     bottom: 0;
     background: #c797eb;
+    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
     transition: all 0.3s ease;
 }
 
@@ -512,6 +510,10 @@
     left: 0;
     top: 0;
     background: #c797eb;
+    /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
     transition: all 0.3s ease;
 }
 
@@ -532,7 +534,6 @@
 .btn8 span:hover:after {
     width: 100%;
 }
-
 
 /* 9 */
 
@@ -605,7 +606,6 @@
     transform: scale(1);
 }
 
-
 /* 11 */
 
 .btn11 {
@@ -630,7 +630,7 @@
     width: 30px;
     height: 100%;
     background-color: #fff;
-    animation: shiny-btn1 3s ease-inout infinite;
+    /* animation: shiny-btn1 3s ease-inout infinite; */
 }
 
 .btn11:hover {
@@ -642,6 +642,28 @@
 }
 
 
+/* 애니메이션 keyframs는 더 배울필요가 있음.*/
+/* @-webkit-keyframes shiny-btn11 {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity: 0;
+    }
+} */
 
 
 /* 12 */

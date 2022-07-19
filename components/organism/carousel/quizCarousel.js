@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styles from "./QuizCarousel.module.css";
-import PrevNextButton from "../../molecule/buttons/prevnextButton";
+import PrevNextButton from "../../molecule/buttons/PrevNextButton";
 import PrevButton from "../../molecule/buttons/prevButton";
 import QuizItem from "../../molecule/quizItem/QuizItem";
 import Button from "../../atom/Button/Button";
-import { useSelector } from 'react-redux';
 import { useMutation } from "react-query";
 import { fetchQuizResult } from "../../../pages/api/fetchQuizResult";
 import { useRouter } from "next/router";
@@ -12,7 +11,6 @@ import { useRouter } from "next/router";
 
 export default function QuizCarousel({ slideItems }) {
 
-  const email = useSelector((state) => state.authSlice.email)
   const [slideTotal, setSlideTotal] = useState(slideItems.length - 1);
   const [slideCurrent, setSlideCurrent] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
@@ -63,7 +61,7 @@ export default function QuizCarousel({ slideItems }) {
   }
 
   const quizSummary = (
-    <div className={styles.container_summary}>
+    <div>
       <div className={styles.summary}>
         <h2>{correctCount}점</h2>
         <h2>{correctCount}/{slideTotal + 1}</h2>

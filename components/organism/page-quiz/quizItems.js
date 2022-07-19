@@ -1,5 +1,5 @@
 import { dehydrate, QueryClient, useQuery } from "react-query";
-import QuizCarousel from "../carousel/quizCarousel";
+import QuizCarousel from "../carousel/QuizCarousel";
 import styles from "./QuizItems.module.css";
 import { fetchQuizItem } from "../../../pages/api/fetchQuizItem";
 import Loading from "../page-loading/Loading";
@@ -30,7 +30,6 @@ export default function QuizItems() {
       ) :
         <div>
           <QuizCarousel slideItems={data} />
-          아에이오우
         </div>
       }
     </div>
