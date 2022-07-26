@@ -1,0 +1,14 @@
+.container {
+    padding-bottom: 2vh;
+    /* background-color: antiquewhite; */
+}
+
+.sentences {
+    display: inline-block;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.default {
+    cursor: default;
+}
