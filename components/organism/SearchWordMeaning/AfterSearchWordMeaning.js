@@ -3,7 +3,6 @@ import Meanbox from "../../molecule/meanbox/Meanbox";
 
 export default function AfterSearchWordMeaning({ sentences }) {
 
-    console.log(sentences)
 
     return (
         <div className={styles.container} >

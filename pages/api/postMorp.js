@@ -22,6 +22,7 @@ export const postMorp = async (text) => {
   const { data } = await axios.post(
     "http://aiopen.etri.re.kr:8000/WiseNLU", requestJson
   ).then((response) => {
+    console.log(requestJson)
     return response;
   }).catch((error) => console.log(error))
 

@@ -18,7 +18,6 @@ export default function Meanbox({ word, type }) {
         "MAG": "관형사",
         "MAJ": "부사",
     }
-    console.log(typeMap)
 
     return (
         <div className={styles.box}>
