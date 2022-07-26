@@ -13,10 +13,10 @@ class MainDocument extends Document {
         <Head>
           {/* <script src="https://developers.kakao.com/sdk/js/kakao.js"></script> */}
         </Head>
-        <meta
+      {/*<meta
           httpEquiv="Content-Security-Policy"
           content="upgrade-insecure-requests"
-        />
+        />*/}
         <body>
           <Main />
           <NextScript />
