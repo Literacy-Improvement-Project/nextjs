@@ -2,8 +2,10 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import styled from 'styled-components';
 import ReactDOM from 'react-dom';
+import ModalBox from '../../atom/ModalBox/ModalBox';
+import ModalTable from '../../molecule/table/ModalTable';
 
-const ModalTest = ({ show, maskClosable, onClose, children, title, data }) => {
+const Modal = ({ show, maskClosable, onClose, children, title, data }) => {
     const [isBrowser, setIsBrowser] = useState(false);
 
     const onMaskClick = (e) => {
@@ -11,6 +13,7 @@ const ModalTest = ({ show, maskClosable, onClose, children, title, data }) => {
             onClose()
         }
     }
+
     useEffect(() => {
         setIsBrowser(true);
     }, []);
@@ -28,9 +31,10 @@ const ModalTest = ({ show, maskClosable, onClose, children, title, data }) => {
                         x
                     </a>
                 </StyledModalHeader>
-                {title && <StyledModalTitle>{title}</StyledModalTitle>}
-                <StyledModalBody>{children}{data}
-
+                {title && <StyledModalTitle>오픈사전에 등록하기</StyledModalTitle>}
+                <StyledModalBody>{children}
+                    <ModalBox>{title}</ModalBox>
+                    <ModalTable title={title} data={data} handleCloseClick={onClose}></ModalTable>
                 </StyledModalBody>
             </StyledModal>
         </StyledModalOverlay>
@@ -91,4 +95,4 @@ const StyledModalTitle = styled.div`
   `;
 
 
-export default ModalTest;
+export default Modal;
