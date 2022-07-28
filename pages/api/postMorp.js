@@ -27,7 +27,6 @@ export const postMorp = async (text) => {
     //   headers: { 'X-Requested-With': 'XMLHttpRequest' },
     // },
   ).then((response) => {
-    // console.log(requestJson)
     return response;
   }).catch((error) => console.log(error))
 
