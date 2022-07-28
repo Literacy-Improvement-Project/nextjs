@@ -6,6 +6,7 @@ import Seo from '../components/seo/Seo'
 import SearchWord from '../components/organism/SearchWordMeaning/SearchWord'
 import Dailyword from '../components/organism/page-dailyword/Dailyword';
 import DescribePage from '../components/organism/page-describe/DescribePage';
+import Logout from '../components/atom/kakaoButton/LogoutBtn'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
           <a name="dailyWords"></a>
           <Dailyword></Dailyword>
         </li>
+        <li><Logout></Logout></li>
       </ul>
     </div>
   )
