@@ -5,7 +5,7 @@ export const postMorp = async (text) => {
   const access_key = '9c46ad05-ca7a-4326-8a93-64501b67e95b';
   const analysisCode = "wsd_poly";
 
-  axios.defaults.baseURL = 'https://kotudy.netlify.app/' ;
+  // axios.defaults.baseURL = 'https://kotudy.netlify.app/' ;
 
   let txt = "슬로우스타터 우승"
 
@@ -22,9 +22,12 @@ export const postMorp = async (text) => {
   };
 
   const { data } = await axios.post(
-    "http://aiopen.etri.re.kr:8000/WiseNLU", requestJson
+    "http://aiopen.etri.re.kr:8000/WiseNLU", requestJson,
+    // {
+    //   headers: { 'X-Requested-With': 'XMLHttpRequest' },
+    // },
   ).then((response) => {
-    console.log(requestJson)
+    // console.log(requestJson)
     return response;
   }).catch((error) => console.log(error))
 
