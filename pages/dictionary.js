@@ -1,4 +1,4 @@
-import MyDictionary from "../components/organism/page-myDictionary/myDictionary";
+import MyDictionary from "../components/organism/page-myDictionary/MyDictionary";
 import { dehydrate, QueryClient, useQuery } from "react-query";
 import { getMyDictionary } from "./api/getMyDictionary";
 import Seo from "../components/seo/Seo";

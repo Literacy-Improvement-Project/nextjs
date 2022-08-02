@@ -12,7 +12,7 @@ export default function Nav() {
         home: "#home",
         dailyWords: "#dailyWords",
         quiz: "#quiz",
-        myDictionary: "#myDictionary",
+        myDictionary: "#dictionary",
         openDictionary: "#openDictionary",
         searchWords: "#searchWords"
     };
