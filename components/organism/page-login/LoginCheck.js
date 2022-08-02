@@ -14,7 +14,7 @@ export default function LoginCheck() {
       const token = getCookie('userID');
       dispatch(loginUser(token))
     }
-  }, [isLogin])
+  }, [dispatch])
 
 
   return (

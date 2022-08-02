@@ -22,24 +22,24 @@ export default function UserRanking() {
   const [userInfo, setUserInfo] = useState({})
 
   useEffect(() => {
-    if(data) {
+    if (data) {
       let userData = data.find(v => v.userId === userName)
-      userData.rank = data.findIndex(v => v.userId === userName)+1
+      userData.rank = data.findIndex(v => v.userId === userName) + 1
       setUserInfo(userData)
     }
-  })
-  
+  }, [data, userName])
+
 
   return (
     <div>
       <Seo title="Kotudy" subtitle="개인 순위"></Seo>
       {isLoading ? (
         <Loading></Loading>
-        ) : isError ? (
-          <div>Error: {error.message}</div>
-        ) : (
-          <UserRank userList={data} userInfo={userInfo}></UserRank>
-        )
+      ) : isError ? (
+        <div>Error: {error.message}</div>
+      ) : (
+        <UserRank userList={data} userInfo={userInfo}></UserRank>
+      )
       }
     </div>
   )
