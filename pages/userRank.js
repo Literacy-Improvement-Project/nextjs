@@ -8,7 +8,7 @@ import Loading from "../components/organism/page-loading/Loading";
 import Seo from "../components/seo/Seo";
 
 
-export default function UserRanking() {
+export default function UserRank() {
 
   const userName = useSelector((state) => state.authSlice.email)
   const { isLoading, isError, error, data } = useQuery('userRank', () =>
@@ -27,7 +27,7 @@ export default function UserRanking() {
       userData.rank = data.findIndex(v => v.userId === userName)+1
       setUserInfo(userData)
     }
-  })
+  }, [data])
   
 
   return (

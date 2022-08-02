@@ -4,7 +4,7 @@ import WordRank from "../components/organism/page-rank/wordRank";
 import Seo from "../components/seo/Seo";
 import { fetchWordRank } from "./api/fetchWordRank";
 
-export default function WordRanking() {
+export default function WordRank() {
 
   const { isLoading, isError, error, data } = useQuery('wordRank', () =>
     fetchWordRank(),
