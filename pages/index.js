@@ -7,6 +7,7 @@ import SearchWord from '../components/organism/SearchWordMeaning/SearchWord'
 import Dailyword from '../components/organism/page-dailyword/Dailyword';
 import DescribePage from '../components/organism/page-describe/DescribePage';
 import Logout from '../components/atom/kakaoButton/LogoutBtn'
+import OpenDictionary from '../components/organism/page-openDictionary/openDictionary'
 
 export default function Home() {
   return (
@@ -23,6 +24,9 @@ export default function Home() {
         <li>
           <a name="dailyWords"></a>
           <Dailyword></Dailyword>
+        </li>
+        <li>
+          <a name="openDictionary"><OpenDictionary></OpenDictionary></a>
         </li>
         <li><Logout></Logout></li>
       </ul>

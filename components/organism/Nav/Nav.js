@@ -38,7 +38,7 @@ export default function Nav() {
                         </>
                     }
                     <li className={styles.li}><Link href="/quiz"><a className={styles.a} ><img className={styles.img2} src="/images/quiz02.png" /></a></Link></li>
-                    <li className={styles.li}><Link href="/mydictionary"><a className={styles.a} ><img className={styles.img2} src="/images/myDictionary.png" /></a></Link></li>
+                    <li className={styles.li}><Link href="/dictionary"><a className={styles.a} ><img className={styles.img2} src="/images/myDictionary.png" /></a></Link></li>
                     <li className={styles.li}>
                         <button className={styles.title_ranking} onClick={() => setCheck(!check)}>
                             <img className={styles.img2} src="/images/ranking01.png" />
