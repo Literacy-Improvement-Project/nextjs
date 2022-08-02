@@ -37,7 +37,7 @@ export default function WordRanking({ wordList }) {
               <tr className={styles.tr} key={index}>
                 <td>
                   {index <= 2
-                    ? <Image src={rank_base_url + (index + 1) + ".png"}></Image>
+                    ? <img src={rank_base_url + (index + 1) + ".png"}></img>
                     : <span className={styles.rank_num}>{index + 1}</span>
                   }
                 </td>
