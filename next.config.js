@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  
+
   async rewrites() {
 
     return [
       {
-        source: "/api/kakaoAuth",
+        source: "/api/KakaoAuth",
         destination: process.env.KAKAO_AUTH_URL,
       },
       {
