@@ -13,17 +13,16 @@ export const fetchWords = async (txt) => {
     }
     const { data } = await axios.get(
         "https://opendict.korean.go.kr/api/search", {
-            params: {
-                key: access_key,
-                q: q,
-                num: num,
-                sort: sort,
-                req_type: 'json',
-                advanced: 'y',
-                method: method,
-            }
+        params: {
+            key: access_key,
+            q: q,
+            num: num,
+            sort: sort,
+            req_type: 'json',
+            advanced: 'y',
+            method: method,
         }
-
+    }
     ).then((response) => {
         return response;
     }).catch((error) => console.log(error))
