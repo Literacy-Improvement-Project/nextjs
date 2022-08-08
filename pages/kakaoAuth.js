@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { loginUser } from "../store/modules/authSlice";
 import { setCookies, getCookie } from 'cookies-next';
 import { useEffect } from "react";
-import DescribePage from "../components/organism/page-describe/describePage";
+import DescribePage from "../components/organism/page-describe/DescribePage";
 import Loading from "../components/organism/page-loading/Loading";
 
 
