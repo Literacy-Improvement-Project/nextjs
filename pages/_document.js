@@ -11,7 +11,7 @@ class MainDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+          <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
           {/* <script src="https://developers.kakao.com/sdk/js/kakao.js"></script> */}
         </Head>
         {/*<meta
