@@ -9,7 +9,7 @@ import DescribePage from "../components/organism/page-describe/describePage";
 import Loading from "../components/organism/page-loading/Loading";
 
 
-export default function kakaoAuth({params}) {
+export default function KakaoAuth({params}) {
   const router = useRouter()
   const code = router.query.code
   const email = useSelector((state) => state.authSlice.email)
