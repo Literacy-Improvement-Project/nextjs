@@ -5,7 +5,7 @@ export const fetchDailyword = async () => {
   
 
   const { data } = await axios.get(
-    "http://61.255.221.125:9999/dailyWords"
+    "https://101.79.11.3:32189/dailyWords"
   ).then((response) => {
     return response
   })
